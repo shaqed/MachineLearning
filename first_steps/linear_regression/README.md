@@ -13,5 +13,7 @@ pip3 install --upgrade numpy
 ```
 
 ## How to use this repository
-* Install the libraries
-*
+1. Install the libraries (make sure they are correctly installed).
+2. Use the ```loader.py```'s loadData function to load data from a URL. (Make sure to add one's columnd to the data matrix)
+3. Use one of the examples, with or without TensorFlow, the code is commented and hopefully you'll be able to understand what is going on
+4. Have fun!

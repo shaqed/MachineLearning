@@ -50,6 +50,10 @@ def run_with_matrix(debug = True, alpha = 0.1, max_steps = 3000):
 
     # Setup the data
     num_of_features = matrix.shape[1] # Number of features
+
+    # Note: Used "constant" here so that the gradient won't update these values
+    # We only want "hypothesis" to be updated
+    # This can also be solved by other solutions.
     matrix = tf.constant(matrix, dtype=tf.float64) # Data matrix
     y_vector = tf.constant(y_vector, dtype=tf.float64) # Y vector
 
